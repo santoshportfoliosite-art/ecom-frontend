@@ -1,0 +1,85 @@
+#######################################
+# NETLIFY BUILD SETTINGS
+#######################################
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { 
+    NODE_VERSION = "18", 
+    VITE_BACKEND_URL = "https://your-backend-url.com"
+  }
+
+#######################################
+# REDIRECTS (SPA FALLBACK)
+#######################################
+# All routes go to index.html for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+#######################################
+# API PROXY (OPTIONAL)
+# Example: /api/* → your backend
+#######################################
+[[redirects]]
+  from = "/api/*"
+  to = "https://your-backend-url.com/api/:splat"
+  status = 200
+  force = true
+
+#######################################
+# FULL CORS HEADERS
+#######################################
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, PATCH, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization, X-Requested-With"
+    Access-Control-Allow-Credentials = "true"
+
+#######################################
+# SECURITY HEADERS
+#######################################
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+#######################################
+# STATIC FILE CACHE (IMPROVES SPEED)
+#######################################
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+#######################################
+# HTML CACHE CONTROL (NO CACHE)
+#######################################
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+#######################################
+# GZIP + BROTLI COMPRESSION
+#######################################
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[[plugins]]
+  package = "@netlify/plugin-gzip"
+  [plugins.inputs]
+    fileExtensions = ["html", "css", "js", "json", "svg"]
+
+[[plugins]]
+  package = "@netlify/plugin-brotli"
+  [plugins.inputs]
+    fileExtensions = ["html", "css", "js", "json", "svg"]

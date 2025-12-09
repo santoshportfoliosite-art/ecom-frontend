@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- HOME -->
+  <url>
+    <loc>https://haatbajar.netlify.app/</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ABOUT -->
+  <url>
+    <loc>https://haatbajar.netlify.app/about</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FASHION -->
+  <url>
+    <loc>https://haatbajar.netlify.app/fashion</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- FEATURED -->
+  <url>
+    <loc>https://haatbajar.netlify.app/featured</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ELECTRONICS -->
+  <url>
+    <loc>https://haatbajar.netlify.app/electronics</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- BEAUTY -->
+  <url>
+    <loc>https://haatbajar.netlify.app/beauty</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SPORTS -->
+  <url>
+    <loc>https://haatbajar.netlify.app/sports</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- PRODUCTS PAGE (All Products List) -->
+  <url>
+    <loc>https://haatbajar.netlify.app/products</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- CART -->
+  <url>
+    <loc>https://haatbajar.netlify.app/cart</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- MY ORDERS -->
+  <url>
+    <loc>https://haatbajar.netlify.app/my-orders</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- LOGIN -->
+  <url>
+    <loc>https://haatbajar.netlify.app/login</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- POLICY -->
+  <url>
+    <loc>https://haatbajar.netlify.app/policy</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
