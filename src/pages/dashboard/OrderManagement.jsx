@@ -218,7 +218,7 @@ const fetchOrders = async () => {
 
   const handleUpdate = async () => {
     try {
-      const token = localStorage.getItem("token");
+      const token = localStorage.getItem("adminToken");
       const response = await fetch(`${backendUrl}/api/orders/${selectedOrder._id}`, {
         method: "PUT",
         headers: {
