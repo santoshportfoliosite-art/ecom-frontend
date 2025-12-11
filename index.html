@@ -101,11 +101,15 @@
       content="https://nepalikart.com/default-og.jpg"
     />
 
-    <!-- 5) PWA / FAVICONS / THEME -->
-    <link rel="icon" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#0b74de" />
+   <!-- FAVICONS -->
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Browser Tab Theme Color (Top bar color on mobile) -->
+<meta name="theme-color" content="#49b449" />
 
     <!-- 6) PERFORMANCE HINTS (preconnect / preload fonts & critical assets) -->
     <!-- Adjust host names to your CDN domain(s) -->
@@ -143,7 +147,7 @@
             "url": "https://nepalikart.com",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://nepalikart.com/logo.png",
+              "url": "https://nepalikart.com/logo.svg",
               "width": 512,
               "height": 512
             },
@@ -286,6 +290,7 @@
   </head>
 
   <body>
+  
     <div id="root"></div>
   </body>
 </html>

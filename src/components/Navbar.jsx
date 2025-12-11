@@ -39,7 +39,7 @@ export default function Navbar() {
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
   const [siteData, setSiteData] = useState({
-    companyName: "HaatBazaR",
+    companyName: "NepaliKart",
     logo: null
   });
   const [loading, setLoading] = useState(true);
@@ -98,7 +98,7 @@ export default function Navbar() {
       
       if (data.success && data.site) {
         setSiteData({
-          companyName: data.site.companyName || "HaatBazaR",
+          companyName: data.site.companyName || "NepaliKarT",
           logo: data.site.logo?.url || null
         });
       } else {
@@ -110,7 +110,7 @@ export default function Navbar() {
       
       // Use fallback data
       setSiteData({
-        companyName: "HaatBazaR",
+        companyName: "NepaliKart",
         logo: "https://res.cloudinary.com/dvp9xszv1/image/upload/v1765006165/ecommerce/site/n4b91yejugbqtnvz2nzr.webp"
       });
     } finally {

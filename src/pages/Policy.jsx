@@ -326,7 +326,7 @@ export default function Policy() {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email Support",
-      details: ["support@haatbazar.com", "help@haatbazar.com"],
+      details: ["support@nepalikart.com", "help@nepalikart.com"],
       responseTime: "Within 24 hours",
     },
     {
@@ -634,7 +634,7 @@ export default function Policy() {
                 understood, and agree to be bound by these policies.
               </p>
               <p className="text-sm text-gray-500">
-                © 2025 HaatBazaR. All rights reserved.
+                © 2025 NepaliKarT. All rights reserved.
               </p>
             </div>
           </div>

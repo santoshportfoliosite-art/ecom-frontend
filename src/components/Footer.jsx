@@ -26,7 +26,7 @@ import { colors } from "../theme/colors";
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [siteData, setSiteData] = useState({
-    companyName: "HaatBazaR",
+    companyName: "NepaliKarT",
     companyAddress: "",
     contactEmail: "",
     contactPhone: "",
@@ -80,7 +80,7 @@ export default function Footer() {
       
       if (data.success && data.site) {
         setSiteData({
-          companyName: data.site.companyName || "HaatBazaR",
+          companyName: data.site.companyName || "NepaliKarT",
           companyAddress: data.site.companyAddress || "",
           contactEmail: data.site.contactEmail || "",
           contactPhone: data.site.contactPhone || "",
@@ -96,9 +96,9 @@ export default function Footer() {
       console.error('Error fetching site data:', error);
       // Use fallback data
       setSiteData({
-        companyName: "HaatBazaR",
+        companyName: "NepaliKarT",
         companyAddress: "Kirtipur, Kathmandu, Nepal",
-        contactEmail: "support@haatbazar.com",
+        contactEmail: "support@nepalikart.com",
         contactPhone: "9866573177",
         whatsappNumber: "",
         socialLinks: {},
